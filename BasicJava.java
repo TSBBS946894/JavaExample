@@ -4,8 +4,6 @@ class BasicJava{
    2 Literals: \b(backspace), \t(tab), \n(line feed), \f(form feed),
      \r(carriage return), \"(double quote), \'(single quote), \\(backslash)
 */
-    double d1=1_2_3.4d;
-    float d2=124.4f;
     int[] anArray=new int[3];
     void ifexample(){
         int x=0;
@@ -19,14 +17,12 @@ class BasicJava{
             default:y=0;break;
         }
     }
-    void whileexample(){
-        while(true){}
-    }
+    void whileexample(){while(true){}}
     void forexample(){
         int[] x={1,2,3};
         for(int i=0;i<3;i++){}
         for (int i:x){}
-        for(;;){} //infinite loop
+        //for(;;){} //infinite loop
     }
     void breakexample(){
         int[][] x={{1,2},{3,2}};
@@ -36,11 +32,5 @@ class BasicJava{
                 if (x[i][j]==2){System.out.println("The location is "+i+","+j);break s1;}
             }
         }
-    }
-    void continueexample(){
-        //similar to breakexample();
-    }
-    public static void main(String[] args){
-        BasicJava t=new BasicJava();
     }
 }
