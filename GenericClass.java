@@ -6,6 +6,5 @@ class GenericClass<K,V> {
         GenericClass s1=new GenericClass<String, Integer>("apple",1);
         GenericClass s2=new GenericClass<>(2,5);
         System.out.println(compare(s1,s2));
-        s1.countGreaterThan(1,2);
     }
 }
